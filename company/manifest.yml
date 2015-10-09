@@ -2,5 +2,6 @@
 memory: 512M
 applications:
   - name: company
+    host: company-air
     services:
-      - service-registry
+      - service-reg

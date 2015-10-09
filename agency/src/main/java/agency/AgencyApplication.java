@@ -21,7 +21,7 @@ public class AgencyApplication {
         SpringApplication.run(AgencyApplication.class, args);
     }
 
-    @RequestMapping("/")
+    @RequestMapping("/rest")
     public String guide() {
         String message = travelAgent.getGuide();
         return String.format("Your guide will be: %s", message);

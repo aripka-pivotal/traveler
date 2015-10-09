@@ -3,6 +3,8 @@ instances: 1
 memory: 512M
 applications:
   - name: agency
+    host: agency-air
     services:
-      - service-registry
+      - service-reg
       - circuit-breaker-dashboard
+      - config-service

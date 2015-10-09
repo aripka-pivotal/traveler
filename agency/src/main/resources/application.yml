@@ -1,8 +1,14 @@
-spring:
-  application:
-    name: ${vcap.application.name}
-
+server:
+  port: 9090
+  
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+    hostname: ${vcap.application.uris[0]:localhost}
+    nonSecurePort: 9090
+    
+endpoints:
+  health:
+    sensitive: false 
+ 
+    
+

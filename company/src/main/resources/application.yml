@@ -1,8 +1,8 @@
 spring:
   application:
-    name: ${vcap.application.name}
+    name: ${vcap.application.name:company}
 
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+    hostname: ${vcap.application.uris[0]:localhost}
+    nonSecurePort: 8080

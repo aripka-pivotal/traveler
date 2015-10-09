@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ${vcap.application.name:agency}
+
+  cloud:
+    config:
+      uri: ${vcap.services.config-service.credentials.uri:http://localhost:8888}    
+
